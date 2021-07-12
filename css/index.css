@@ -1,0 +1,580 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.col-lg-3,
+.col-lg-4,
+.col-lg-6,
+.col-md-4,
+.col-md-6,
+.col-sm-6,
+.col-12 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+ul,
+nav,
+body,
+h1,
+h2,
+h4,
+h6,
+p,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    transition: all ease 0.5s;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.container {
+    background-color: #fff;
+    padding: 0px !important;
+}
+
+.sticky {
+    position: fixed !important;
+    top: 0;
+    background-attachment: fixed;
+    background-color: sandybrown;
+    max-height: 110px;
+    background-position: bottom;
+    background-size: cover;
+    z-index: 100;
+    transition: linear 300ms;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+}
+
+
+/* ---------------------------------------------------------- Start of header ---------------------------------------------------------- */
+
+
+/* Start of Header logo */
+
+.parallax {
+    background-image: url(https://lacrafta.com/wp-content/uploads/2020/08/Финал-min-1-min.png);
+    height: 400px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.parallax-header {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.parallax-header--inner {
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+.parallax-logo {
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    bottom: 25%;
+    height: 60px;
+    width: 60px;
+}
+
+.parallax-textbox {
+    display: inline-block;
+    color: seashell;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.parallax-textbox--title {
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.parallax-textbox--text {
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+
+/* End of Header logo */
+
+
+/* Start of Nav-bar */
+
+.parallax-nav {
+    margin-top: 30px;
+}
+
+.parallax-nav--ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.parallax-nav--li {
+    list-style: none;
+    padding: 0px 20px;
+    font-weight: bold;
+}
+
+.nav__link {
+    color: black;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.nav__link.active,
+.nav__link:hover {
+    text-decoration: none;
+    color: white;
+    border-bottom: white 1px solid;
+}
+
+
+/* End of Nav-bar */
+
+
+/* ---------------------------------------------------------- End of header ---------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------- Start of main ---------------------------------------------------------- */
+
+
+/* Start of side-bar */
+
+.side-bar {
+    height: 100%;
+    width: 160px;
+    position: sticky;
+    z-index: 1;
+    top: 400px;
+    left: 0;
+    background-color: #f7a176;
+    overflow-x: hidden;
+    padding-top: 8px;
+}
+
+.side-bar--title>a {
+    padding-left: 5px;
+    color: navajowhite;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.side-bar--title>a:hover {
+    text-decoration: none;
+    color: oldlace;
+}
+
+.side-item {
+    padding: 3px 2px 3px 22px;
+}
+
+.side-item i {
+    color: sienna;
+    font-size: 16px;
+    padding-right: 8px;
+}
+
+.side-item a {
+    color: sienna;
+    text-decoration: none;
+}
+
+.side-item a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.side-item--link.active {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Start of welcome-section */
+
+.welcome-section {
+    margin: 60px auto;
+    max-width: 655px;
+}
+
+.welcome-section .section-title {
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+
+/* End of welcome-section */
+
+
+/* Start menu section */
+
+.menu {
+    margin-bottom: 40px;
+}
+
+.menu-item {
+    list-style: none;
+    display: inline-block;
+    margin: 7px;
+    border: 1px solid #ff7423;
+}
+
+.menu-item--link {
+    padding: 10px 30px;
+    display: flex;
+    color: saddlebrown;
+    text-decoration: overline;
+    background-color: transparent;
+}
+
+.menu-item--link.active,
+.menu-item--link:hover {
+    background-color: #ff7423;
+    color: white;
+    text-decoration: overline;
+}
+
+.menu-gallery {
+    width: 98%;
+    margin-bottom: 80px;
+    padding: 10px;
+    box-shadow: -4px 4px 20px 1px rgb(0 0 0 / 40%);
+}
+
+.menu-gallery--page {
+    max-width: 100%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-gallery--item {
+    max-width: 270px;
+    margin: auto;
+    padding: 10px;
+}
+
+.menu-gallery--item:hover {
+    box-shadow: -4px 4px 20px 1px rgb(0 0 0 / 40%);
+    transition-duration: 0.7s;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.gallery-img {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 230px;
+}
+
+.gallery-title {
+    font-size: 1.8em;
+    font-weight: normal;
+    color: #1a6692;
+    margin-bottom: 15px;
+}
+
+.gallery-description {
+    margin-bottom: 20px;
+    padding-right: 30px;
+    font-size: 0.95em;
+}
+
+.gallery-tag {
+    font-size: smaller;
+    margin: 0px;
+}
+
+.bg-primary {
+    color: white;
+    font-family: monospace;
+    font-size: small;
+    padding: 1px 6px;
+}
+
+.bg-secondary {
+    color: white;
+    font-family: monospace;
+    font-size: small;
+    padding: 1px 6px;
+}
+
+.bg-warning {
+    color: black;
+    font-family: monospace;
+    font-size: small;
+    padding: 1px 6px;
+}
+
+.bg-success {
+    color: white;
+    font-family: monospace;
+    font-size: small;
+    padding: 1px 6px;
+}
+
+.bg-info {
+    color: white;
+    font-family: monospace;
+    font-size: small;
+    padding: 1px 6px;
+}
+
+.bg-danger {
+    color: white;
+    font-family: monospace;
+    font-size: small;
+    padding: 1px 6px;
+}
+
+.bg-light {
+    color: black;
+    font-family: monospace;
+    font-size: small;
+    padding: 1px 6px;
+}
+
+.bg-dark {
+    color: white;
+    font-family: monospace;
+    font-size: small;
+    padding: 1px 6px;
+}
+
+
+/* End of menu section */
+
+
+/* Showroom info --------------------------------------------*/
+
+.neonText {
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px rgb(255, 94, 0), 0 0 82px rgb(255, 94, 0), 0 0 92px rgb(255, 94, 0), 0 0 102px rgb(255, 94, 0), 0 0 151px rgb(255, 94, 0);
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    height: 300px;
+    max-width: 300px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 179, 112);
+    position: relative;
+}
+
+.slide-img {
+    height: 100%;
+}
+
+.autoSlides {
+    height: 300px;
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot-active {
+    background-color: black;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+
+/* End of slide section */
+
+
+/* Start of slide with multiple image */
+
+.carousel-title {
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3em;
+    color: lightslategray;
+    padding: 19px;
+    animation: blinker 10s linear infinite;
+}
+
+@keyframes blinker {
+    10% {
+        color: rgb(128, 0, 0);
+        opacity: 1;
+    }
+    20% {
+        color: red;
+    }
+    30% {
+        color: orange;
+    }
+    40% {
+        color: yellow;
+    }
+    50% {
+        color: green;
+    }
+    60% {
+        color: blue;
+    }
+    70% {
+        color: indigo;
+    }
+    80% {
+        color: violet;
+    }
+    90% {
+        color: pink;
+    }
+    100% {
+        color: white;
+        opacity: 1;
+    }
+}
+
+.slide-boostrap {
+    height: 330px;
+    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    background-color: lightgray;
+}
+
+.slide {
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.carousel-inner {
+    height: 330px;
+}
+
+.img-responsive {
+    height: 330px !important;
+    width: 330px !important;
+}
+
+
+/* End of slide with multiple image */
+
+
+/* End of HomePage's last info -------------------------------------------- */
+
+
+/* ---------------------------------------------------------- End of main ---------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------- Start of footer ---------------------------------------------------------- */
+
+.footer {
+    background-color: darkgray;
+    padding: 25px 15px;
+    /* margin-top: 40px; */
+}
+
+.footer a {
+    color: #626364;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: #1A6692;
+}
+
+
+/* ---------------------------------------------------------- End of footer ---------------------------------------------------------- */
+
+@media (max-width:414px) {
+    .parallax-textbox--title {
+        font-weight: 100;
+        font-size: 25px;
+    }
+    .parallax-textbox--text {
+        font-weight: 100;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+    .parallax {
+        background-size: contain;
+        background-position: top;
+        height: 300px;
+    }
+}
+
+
+/* @media (min-width: 900px) {
+    .structItemContainer .structItem:nth-child(4) {
+        animation: slideUp .3s ease;
+        animation-delay: 0.5s;
+        animation-fill-mode: backwards;
+    }
+} */
