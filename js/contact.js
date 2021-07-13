@@ -2,9 +2,6 @@ $(document).ready(function() {
     $(".contact-link").click(function(e) {
         e.preventDefault();
     })
-    $("#signIn").click(function(e) {
-        e.preventDefault();
-    })
     $("#account").click(function(e) {
         e.preventDefault();
     })

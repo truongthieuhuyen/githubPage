@@ -3,9 +3,6 @@ $(document).ready(function() {
     $(".feature-btn").click(function(e) {
         e.preventDefault();
     });
-    $("#signIn").click(function(e) {
-        e.preventDefault();
-    })
     $("#account").click(function(e) {
         e.preventDefault();
     })

@@ -1,5 +1,6 @@
 // show/hidden Gallery ---------------------------------------------------
 $(document).ready(function() {
+
     // Handle click on paging links
     $(".menu-item--link").click(function(e) {
         e.preventDefault();
@@ -10,7 +11,6 @@ $(document).ready(function() {
         $(".menu-item--link").removeClass("active");
         $(this).addClass("active");
     });
-
     $(".side-item--link").click(function(e) {
         e.preventDefault();
 
@@ -21,15 +21,14 @@ $(document).ready(function() {
         $("#menu-" + cate).removeClass("hidden");
     });
 
+
+
     $(".gallery-tag").click(function(e) {
         e.preventDefault();
     });
     $(".gallery-title").click(function(e) {
         e.preventDefault();
     });
-    $("#signIn").click(function(e) {
-        e.preventDefault();
-    })
     $("#account").click(function(e) {
         e.preventDefault();
     })
